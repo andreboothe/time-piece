@@ -32,9 +32,9 @@
     width: 400px;
     margin-left: -200px;
     margin-top: -200px;
-    transition: transform 3s ease;
     background: linear-gradient(15deg, rgb(90, 90, 90)0% ,rgb(120,120,120) 50%,  rgb(255,255,2555) 100%);
     z-index: 7;
+    transition: all 3s ease;
     transform-origin: 0% bottom;
     cursor: pointer;
     
