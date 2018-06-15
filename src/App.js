@@ -21,6 +21,13 @@ class App extends Component {
     this.updateClock();
   }
 
+  onClickFlipLid = (event) => {
+    const lid = document.querySelector('.clock-frame__lid');
+    
+    lid.classList.toggle('lid-open');
+    
+  }
+
   getCurrentLocalTime = () => {
     const time = new Date();
     const hours = (time.getHours() > 12)?time.getHours() - 12:time.getHours();
@@ -69,6 +76,7 @@ class App extends Component {
           hourHandPosition = {hourHandPosition}
           minuteHandPostion = {minuteHandPosition}
           secondHandPostion = {secondHandPosition}
+          onClickFlipLid = {this.onClickFlipLid}
         />
       </main>
     );

@@ -3,25 +3,26 @@ import React from 'react';
 // Includes
 import './PocketWatch.css';
 
-const PocketWatch = ({minuteHandPostion, hourHandPosition, secondHandPostion}) => {
+const PocketWatch = ({minuteHandPostion, hourHandPosition, secondHandPostion, onClickFlipLid}) => {
 
     return (
         <section className="section">
             <div className="container ">
-                <div className="clock-frame center">
+                <div className="clock-frame center clock-frame__bg-grey-white">
+                    <div onClick={onClickFlipLid} className="clock-frame__lid"></div>
                     <div id="time-marks">
-                        <div className="time-mark time-mark--1">I</div>
-                        <div className="time-mark time-mark--2">II</div>
-                        <div className="time-mark time-mark--3">III</div>
-                        <div className="time-mark time-mark--4">IV</div>
-                        <div className="time-mark time-mark--5">V</div>
-                        <div className="time-mark time-mark--6">VI</div>
-                        <div className="time-mark time-mark--7">VII</div>
-                        <div className="time-mark time-mark--8">VIII</div>
-                        <div className="time-mark time-mark--9">IX</div>
-                        <div className="time-mark time-mark--10">X</div>
-                        <div className="time-mark time-mark--11">XI</div>
-                        <div className="time-mark time-mark--12">XII</div>
+                        <div className="time-mark time-mark--1 time-mark--dark">I</div>
+                        <div className="time-mark time-mark--2 time-mark--dark">II</div>
+                        <div className="time-mark time-mark--3 time-mark--dark">III</div>
+                        <div className="time-mark time-mark--4 time-mark--light">IV</div>
+                        <div className="time-mark time-mark--5 time-mark--light">V</div>
+                        <div className="time-mark time-mark--6 time-mark--light">VI</div>
+                        <div className="time-mark time-mark--7 time-mark--light">VII</div>
+                        <div className="time-mark time-mark--8 time-mark--light">VIII</div>
+                        <div className="time-mark time-mark--9 time-mark--light">IX</div>
+                        <div className="time-mark time-mark--10 time-mark--dark">X</div>
+                        <div className="time-mark time-mark--11 time-mark--dark">XI</div>
+                        <div className="time-mark time-mark--12 time-mark--dark">XII</div>
                     </div>
                     <div className="inner-frame">
                         <div className="back-ground">
