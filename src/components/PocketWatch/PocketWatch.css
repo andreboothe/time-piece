@@ -41,7 +41,8 @@
 }
 
 .clock-frame__lid::before{
-    transition: color .5s ease-out;
+    transition: color .5s ease-in-out;
+    transition-delay: .55s;
     content:"TimeLess Classic";
     font-family: 'Libre Baskerville', Serif;
     font-size: 200%;
